@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+.galaxy {
+    height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sun {
+    position: relative;
+    width: 200px;
+}
+
+.place-month, .month {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: calc(100% + 30px);
+    transform-origin: top;
+    animation-name: spin;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.place {
+    width: 90px;
+    position: relative;
+}
+
+.month {
+    padding-top: 70px;
+    animation-duration: 8s;
+}
+
+.month img {
+    width: 25px;
+}
+
+@keyframes spin {
+    0% {}
+    100% {
+        transform: rotate(360deg);
+    }
+}
