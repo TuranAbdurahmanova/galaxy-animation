@@ -1,1 +1,1 @@
-# animation-galaxy
+# animation-example-galaxy
